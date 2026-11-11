@@ -1,1 +1,35 @@
 
+name: Build Favorites Server Info
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'plugins/favorites-server-info/**'
+      - '.github/workflows/build.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: plugins/favorites-server-info
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build plugin
+        run: bun run build
+
+      - name: Upload build files
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: favorites-server-info-build
+          path: plugins/favorites-server-info/dist/
+          if-no-files-found: error
