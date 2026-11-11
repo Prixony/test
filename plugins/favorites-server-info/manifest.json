@@ -1,14 +1,13 @@
-
 {
+  "id": "community.favorites-server-info",
   "name": "Favorites Server Info",
-  "description": "Shows server information in Favorites.",
-  "id": "dev.prixony.favorites-server-info",
-  "version": "0.1.0",
+  "description": "Show guild identity below favorite channels",
   "authors": [
     {
-      "name": "Prixony",
-      "id": "0"
+      "name": "Community"
     }
   ],
-  "main": "src/index.tsx"
+  "version": "0.1.0",
+  "icon": "StarIcon",
+  "main": "index.tsx"
 }

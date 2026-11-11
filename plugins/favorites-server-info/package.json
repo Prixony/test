@@ -1,0 +1,16 @@
+{
+  "name": "favorites-server-info",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "ubd build"
+  },
+  "devDependencies": {
+    "@unbound-app/api": "latest",
+    "@unbound-app/cli": "latest",
+    "@types/react": "latest",
+    "react": "latest",
+    "react-native": "latest",
+    "typescript": "latest"
+  }
+}
