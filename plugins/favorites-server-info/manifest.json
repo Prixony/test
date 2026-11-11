@@ -1,0 +1,14 @@
+
+{
+  "name": "Favorites Server Info",
+  "description": "Shows server information in Favorites.",
+  "id": "dev.prixony.favorites-server-info",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Prixony",
+      "id": "0"
+    }
+  ],
+  "main": "src/index.tsx"
+}
